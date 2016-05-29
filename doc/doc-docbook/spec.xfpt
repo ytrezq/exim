@@ -16927,14 +16927,17 @@ a default DH prime; the default is the 2048 bit prime described in section
 in IKE is assigned number 23.
 
 Otherwise, the option must expand to the name used by Exim for any of a number
-of DH primes specified in RFC 2409, RFC 3526 and RFC 5114.  As names, Exim uses
-"ike" followed by the number used by IKE, of "default" which corresponds to
-"ike23".
+of DH primes specified in RFC 2409, RFC 3526 and RFC 5114 or from other
+sources.  As names, Exim uses "ike" followed by the number used by IKE, or
+"default" which corresponds to "exim.dev.20160529.3".
 
-The available primes are:
+The available standard primes are:
 &`ike1`&, &`ike2`&, &`ike5`&,
 &`ike14`&, &`ike15`&, &`ike16`&, &`ike17`&, &`ike18`&,
-&`ike22`&, &`ike23`& (aka &`default`&) and &`ike24`&.
+&`ike22`&, &`ike23`& and &`ike24`&.
+
+The available additional primes are:
+&`exim.dev.20160529.1`&, &`exim.dev.20160529.2`& and &`exim.dev.20160529.3`&.
 
 Some of these will be too small to be accepted by clients.
 Some may be too large to be accepted by clients.

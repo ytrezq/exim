@@ -17,6 +17,7 @@ Version 4.88
  3. Speculative debugging, via a "kill" option to the "control=debug" ACL
     modifier.
 
+ 4. New built-in constants available for tls_dhparam and default changed.
 
 Version 4.87
 ------------
