@@ -358,7 +358,6 @@ init_dh(void)
 int fd;
 int ret;
 gnutls_datum_t m;
-uschar filename[200];
 struct stat statbuf;
 
 /* Initialize the data structures for holding the parameters */

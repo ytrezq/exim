@@ -72,7 +72,7 @@ dcc_process(uschar **listptr)
   uschar sendbuf[4096];
   uschar recvbuf[4096];
   uschar dcc_return_text[1024];
-  uschar mbox_path[1024];
+  uschar mbox_path[PATH_MAX];
   uschar message_subdir[2];
   struct header_line *dcchdr;
   uschar *dcc_acl_options;
